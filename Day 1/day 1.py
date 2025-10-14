@@ -27,3 +27,45 @@
 # text_reversed = user_text[::-1]
 #
 # print(f"String length: {text_length}\n Uppercase: {text_upper}\n Lowercase: {text_lower}\n First character: {text_first_char}\n Last character: {text_second_char}\n Reversed string: {text_reversed}")
+
+# Project day 1: Calculator v1
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def multiply(a, b):
+    return a * b
+
+def divide(a, b):
+    if b == 0:
+        return None
+    return a / b
+
+def main():
+    first_number = input("Enter first number:")
+    second_number = input("Enter second number:")
+    action_number = input("What shall we do with the numbers? Enter one of the following symbols: +, -, *, /:")
+
+if __name__ == "__main__":
+    main()
+
+
+
+
+
+
+# print(34 * -1)
+# # def opposite(number):
+# #     if number >= 0:
+# #         return number * -1
+# #     if number <= 0:
+# #         return number * 1
+# #     else:
+# #         return number
+# # print(opposite)
+#
+# def string_to_number(s):
+#     int(string_to_number)
+# print(type(int("100")))
