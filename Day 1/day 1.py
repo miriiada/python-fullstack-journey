@@ -44,9 +44,31 @@ def divide(a, b):
     return a / b
 
 def main():
-    first_number = input("Enter first number:")
-    second_number = input("Enter second number:")
-    action_number = input("What shall we do with the numbers? Enter one of the following symbols: +, -, *, /:")
+    first_number = int(input("Enter first number: "))
+    second_number = int(input("Enter second number: "))
+    action_number = input("What shall we do with the numbers? Enter one of the following symbols: +, -, *, /: ")
+    # action_number_int = int(action_number)
+    # if action_number == "+":
+    #     return add(first_number, second_number)
+    # elif action_number == "-":
+    #     return subtract(first_number, second_number)
+    # elif action_number == "*":
+    #     return multiply(first_number, second_number)
+    # elif action_number == "/":
+    #     return divide(first_number, second_number)
+    # else:
+    #     return "Unknown operation you need enter one the following symbols: +, -, *, /: "
+    if action_number == "+":
+        print(add(first_number, second_number))
+    elif action_number == "-":
+        print(subtract(first_number, second_number))
+    elif action_number == "*":
+        print(multiply(first_number, second_number))
+    elif action_number == "/":
+        print(divide(first_number, second_number))
+    else:
+        print("Unknown operation you need enter one the following symbols: +, -, *, /")
+
 
 if __name__ == "__main__":
     main()
